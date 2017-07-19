@@ -1,0 +1,184 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+* {
+    margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+	  background-color: #FFF;
+	  color: #FFF;
+	  font-family: 'Raleway', sans-serif;
+	  font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+	  max-width: 1140px;
+	  margin: 0 auto;
+}
+
+header {
+	  background-image: url('pexels-photo.jpg');
+    background-size: cover;
+		background-position: center;
+		height: 100vh;
+}
+
+.home-overlay {
+    background-color: rgba(44, 62, 80, 0.3);
+    background-image: url('pattern.png');
+    background-repeat: repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.landing-text-box {
+    position: absolute;
+		width: 100%;
+		top: 50%;
+		left: 0;
+		text-align: center;
+		color: #FFF;
+		transform: translate(0%, -50%);
+		padding: 0 15px;
+		font-weight: 700;
+}
+
+/* ---------------------------------------------- /*
+ *Scroll Down
+/* ---------------------------------------------- */
+
+.scroll-down {
+	  position: absolute;
+	  left: 50%;
+	  bottom: 40px;
+	  border: 2px solid #fff;
+	  border-radius: 50%;
+	  height: 50px;
+	  width: 50px;
+	  margin-left: -15px;
+	  display: block;
+	  z-index: 10;
+    text-align: center;
+}
+
+.scroll-down span{
+    position: relative;
+    color: #fff;
+    -webkit-animation-name: drop;
+	  -webkit-animation-duration: 1s;
+	  -webkit-animation-timing-function: linear;
+	  -webkit-animation-delay: 0s;
+	  -webkit-animation-iteration-count: infinite;
+	  -webkit-animation-play-state: running;
+	  animation-name: drop;
+	  animation-duration: 1s;
+	  animation-timing-function: linear;
+	  animation-delay: 0s;
+	  animation-iteration-count: infinite;
+	  animation-play-state: running;
+}
+
+@-webkit-keyframes drop	{
+	  0%   { top:0px;  opacity: 0;}
+	  30%  { top:10px; opacity: 1;}
+	  100% { top:25px; opacity: 0;}
+}
+
+@keyframes drop	{
+	  0%   { top:0px;  opacity: 0;}
+	  30%  { top:10px; opacity: 1;}
+	  100% { top:25px; opacity: 0;}
+}
+
+/* ---------------------------------------------- /*
+ * Typography
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- /*
+ * Footer
+/* ---------------------------------------------- */
+
+#footer {
+	  background: #222;
+	  text-align: center;
+	  padding: 40px 0;
+	  color: #FFF;
+}
+
+.copyright {
+	  margin: 0;
+}
+
+.copyright a{
+    border-bottom: 1px dotted #fff;
+}
+
+#footer span{
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    color: #ff5252;
+}
+
+.social-links {
+	  list-style: none;
+	  padding: 0;
+	  margin: 0 0 20px;
+}
+
+.social-links li {
+	  display: inline-block;
+	  margin: 5px;
+}
+
+.social-links a {
+	  width: 36px;
+	  height: 36px;
+	  display: block;
+	  line-height: 35px;
+	  text-align: center;
+	  border: 1px solid rgba(255, 255, 255, .1);
+	  -webkit-border-radius: 3px;
+	  -moz-border-radius: 3px;
+		border-radius: 3px;
+	  font-size: 14px;
+	  color: rgba(255, 255, 255, .2);
+}
+
+.social-links a:hover {
+	  border: 1px solid rgba(255, 255, 255, .5);
+	  color: rgba(255, 255, 255, .8);
+}
+
+/* ---------------------------------------------- /*
+ * Media
+/* ---------------------------------------------- */
+
+@media (max-width: 480px) {
+
+	h1 {
+		font-size: 34px;
+		letter-spacing: 3px;
+	}
+
+	h2 {
+		font-size: 24px;
+		margin: 0 0 30px;
+		letter-spacing: 3px;
+	}
+}
