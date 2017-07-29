@@ -9,7 +9,7 @@ class PortfoliosController < ApplicationController
 
   def create
   	@portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
-    
+
     respond_to do |format|
       if @portfolio_item.save
       	format.html { redirect_to portfolios_path, notice: 'Your portfolio item is live!' }
@@ -17,7 +17,7 @@ class PortfoliosController < ApplicationController
       	format.html { render :new }
       end
     end
-  end 
+  end
 
   def edit
   	@portfolio_item = Portfolio.find(params[:id])
@@ -37,5 +37,18 @@ class PortfoliosController < ApplicationController
 
   def show
     @portfolio_item = Portfolio.find(params[:id])
+  end
+
+  def destroy
+    # Perform the lookup
+    @portfolio_item = Portfolio.find(params[:id])
+
+    # Delete the record
+    @portfolio_item.destroy
+
+    # Redirect to Portfolio page
+    respond_to do |format|
+      format.html { redirect_to portfolios_url, notice: 'The Portfolio item was deleted successfully.' }
+    end
   end
 end
