@@ -6,33 +6,35 @@
 
 * {
     margin: 0;
-	  padding: 0;
-	  box-sizing: border-box;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
 html {
-	  background-color: #FFF;
-	  color: #FFF;
-	  font-family: 'Raleway', sans-serif;
-	  font-weight: 300;
+	background-color: #FFF;
+	color: #FFF;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
 
 .row {
-	  max-width: 1140px;
-	  margin: 0 auto;
+	max-width: 1140px;
+	margin: 0 auto;
 }
 
 header {
-	  background-image: url('pexels-photo.jpg');
+	background-image: url('pexels-photo.jpg');
     background-size: cover;
-		background-position: center;
-		height: 100vh;
+	background-position: center;
+	height: 100vh;
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
 }
@@ -51,14 +53,14 @@ header {
 
 .landing-text-box {
     position: absolute;
-		width: 100%;
-		top: 50%;
-		left: 0;
-		text-align: center;
-		color: #FFF;
-		transform: translate(0%, -50%);
-		padding: 0 15px;
-		font-weight: 700;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	color: #FFF;
+	transform: translate(0%, -50%);
+	padding: 0 15px;
+	font-weight: 700;
 }
 
 /* ---------------------------------------------- /*
@@ -66,16 +68,16 @@ header {
 /* ---------------------------------------------- */
 
 .scroll-down {
-	  position: absolute;
-	  left: 50%;
-	  bottom: 40px;
-	  border: 2px solid #fff;
-	  border-radius: 50%;
-	  height: 50px;
-	  width: 50px;
-	  margin-left: -15px;
-	  display: block;
-	  z-index: 10;
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	margin-left: -15px;
+	display: block;
+	z-index: 10;
     text-align: center;
 }
 
@@ -83,29 +85,29 @@ header {
     position: relative;
     color: #fff;
     -webkit-animation-name: drop;
-	  -webkit-animation-duration: 1s;
-	  -webkit-animation-timing-function: linear;
-	  -webkit-animation-delay: 0s;
-	  -webkit-animation-iteration-count: infinite;
-	  -webkit-animation-play-state: running;
-	  animation-name: drop;
-	  animation-duration: 1s;
-	  animation-timing-function: linear;
-	  animation-delay: 0s;
-	  animation-iteration-count: infinite;
-	  animation-play-state: running;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;
+	animation-name: drop;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
 }
 
 @-webkit-keyframes drop	{
-	  0%   { top:0px;  opacity: 0;}
-	  30%  { top:10px; opacity: 1;}
-	  100% { top:25px; opacity: 0;}
+	0%   { top:0px;  opacity: 0;}
+	30%  { top:10px; opacity: 1;}
+	100% { top:25px; opacity: 0;}
 }
 
 @keyframes drop	{
-	  0%   { top:0px;  opacity: 0;}
-	  30%  { top:10px; opacity: 1;}
-	  100% { top:25px; opacity: 0;}
+	0%   { top:0px;  opacity: 0;}
+	30%  { top:10px; opacity: 1;}
+	100% { top:25px; opacity: 0;}
 }
 
 /* ---------------------------------------------- /*
@@ -117,10 +119,10 @@ header {
 /* ---------------------------------------------- */
 
 #footer {
-	  background: #16171D;
+	background: #16171D;
     text-align: center;
-	  padding: 40px 0;
-	  color: #FFF;
+	padding: 40px 0;
+	color: #FFF;
 }
 
 #footer span{
@@ -130,33 +132,33 @@ header {
 }
 
 .social-links {
-	  list-style: none;
-	  padding: 0;
-	  margin: 0 0 20px;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 20px;
 }
 
 .social-links li {
-	  display: inline-block;
-	  margin: 5px;
+	display: inline-block;
+	margin: 5px;
 }
 
 .social-links a {
-	  width: 36px;
-	  height: 36px;
-	  display: block;
-	  line-height: 35px;
-	  text-align: center;
-	  border: 1px solid rgba(255, 255, 255, .1);
-	  -webkit-border-radius: 3px;
-	  -moz-border-radius: 3px;
-		border-radius: 3px;
-	  font-size: 14px;
-	  color: rgba(255, 255, 255, .2);
+	width: 36px;
+	height: 36px;
+	display: block;
+	line-height: 35px;
+	text-align: center;
+	border: 1px solid rgba(255, 255, 255, .1);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 14px;
+	color: rgba(255, 255, 255, .2);
 }
 
 .social-links a:hover {
-	  border: 1px solid rgba(255, 255, 255, .5);
-	  color: rgba(255, 255, 255, .8);
+	border: 1px solid rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, .8);
 }
 
 /* ---------------------------------------------- /*
