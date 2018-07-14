@@ -22,6 +22,7 @@ gem 'sprockets', '~> 3.5', '>= 3.5.2'
 gem 'friendly_id', '~> 5.2', '>= 5.2.4'
 gem 'font-awesome-sass', '~> 5.0.13'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'devise', '~> 4.2'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
